@@ -1,0 +1,38 @@
+ :root {
+     --left: 20%;
+ }
+
+ .slick-prev.slick-disabled {
+     transform: translateX(-52px);
+     transition: all ease-out .2s;
+ }
+
+ .slick-next.slick-disabled {
+     transform: translateX(55px);
+     transition: all ease-out .2s;
+ }
+
+ .slick-list {
+     padding-bottom: 20px;
+ }
+
+ .slick-dots.line-indicator ul {
+     display: flex;
+     flex-direction: row;
+     /* padding: 20px !important; */
+ }
+
+ .slick-dots.line-indicator li {
+     border: 1px solid rgba(0, 0, 0, .2);
+     height: 1px;
+     width: 23%;
+     /* left: var(--left); */
+     background: rgba(0, 0, 0, .2);
+     margin: 0;
+     transition: background cubic-bezier(0.22, 0.61, 0.36, 1) 0.2s;
+ }
+
+ .slick-dots.line-indicator li.slick-active {
+     background: #333;
+     transition: background cubic-bezier(0.22, 0.61, 0.36, 1) 0.2s;
+ }
